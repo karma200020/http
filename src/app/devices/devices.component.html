@@ -1,0 +1,17 @@
+
+<div class="container">
+<h2>PUT API</h2>
+
+<h2>Devices</h2>
+<form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+<div><label>ID:
+    <input [(ngModel)]="Device.id" placeholder="ID" name="id"/>
+</label></div>
+<div><label>Name:
+    <input [(ngModel)]="Device.name" placeholder="name" name="name"/>
+</label></div>
+<input type="submit" name="UPDATE" ng-click="PostData()" class="btn btn-success ">
+</form>
+</div>
+
+
