@@ -11,7 +11,7 @@ HttpClient
 })
 export class UpdateService {
 
-  url = 'http://web.onelap.in/api/devices/1';
+  url = 'http://web.onelap.in/api/devices';
   
 
   lstdetails: Device[];
@@ -24,16 +24,7 @@ export class UpdateService {
 
 
   put(odevice:Device): Observable<any>
-  { 
-    
-    const httpOptions = {
-      headersDict: new HttpHeaders({
-          'Authorization': 'NzUyOTk0MTM3ODozMzQ0NTU=',       //passing the authorization key
-        })
-    };
-    
-    this._apiservice.getdetails()
-    .subscribe(data=>this.lstdetails = data);
+  {
 
       return this._http.put(this.url,odevice,this.headerDict);
   }

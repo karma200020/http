@@ -13,11 +13,10 @@ export class apiservice
     constructor(private httpclient: HttpClient) {}
 
     //GET Method  
-    headersDict = {};                                         //defining the headers dictornary required for the application 
+    headersDict = {};                                         //header defining the headers dictornary required for the application 
 
  
         getdetails(): Observable<Device[]>{
-            
             const httpOptions = {
                 headersDict: new HttpHeaders({
                     'Authorization':'NzUyOTk0MTM3ODozMzQ0NTU=',       //passing the authorization key
