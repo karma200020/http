@@ -3,7 +3,7 @@ import { Injectable} from '@angular/core';
 import { Observable} from 'rxjs';
 import {  HttpClient,HttpHeaders } from '@angular/common/http';
 
-import { Device } from '../device';
+import { Device } from '../../device';
 
 @Injectable()
 export class apiservice
@@ -17,14 +17,13 @@ export class apiservice
 
  
         getdetails(): Observable<Device[]>{
-            const httpOptions = {
+          /*  const httpOptions = {
                 headersDict: new HttpHeaders({
                     'Authorization':'NzUyOTk0MTM3ODozMzQ0NTU=',       //passing the authorization key
                   })
-              };
-            return this.httpclient.get<any>(this._url,this.headersDict);             //making get request from the 
+              };*/
+            return this.httpclient.get<any>(this._url);             //making get request from the 
 }
- //POST Method
 
 
 

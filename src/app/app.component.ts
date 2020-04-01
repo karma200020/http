@@ -1,6 +1,6 @@
 import { Component,Injectable } from '@angular/core';
 
-import { apiservice } from './services/api.services';
+import { apiservice } from './services/getService/api.services';
 import { Device } from './device';
 
 
